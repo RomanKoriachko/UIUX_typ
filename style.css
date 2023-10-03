@@ -110,7 +110,7 @@ body {
 .main .description .main-btn {
   margin-bottom: 30px;
   width: 100%;
-  background: linear-gradient(203.2deg, #37aee2 21.67%, #1e96c8 70%);
+  background-color: #37aee2;
   padding-top: 12px;
   padding-bottom: 12px;
   color: #ffffff;
@@ -121,6 +121,7 @@ body {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  max-width: 500px;
 }
 .main .description .main-btn .button-row {
   justify-content: center;
@@ -228,7 +229,16 @@ body {
 
 @media (hover: hover) {
   .main .description .main-btn {
+    transition: all 0.3s ease-in-out;
+  }
+  .main .description .main-btn:hover {
+    background-color: #1b85b3;
+  }
+  .footer .footer-wrapper .footer-buttons-row .footer-btn {
     transition: 0.2s all;
+  }
+  .footer .footer-wrapper .footer-buttons-row .footer-btn:hover {
+    transform: scale(110%);
   }
 }
 @media (max-width: 992px) {
