@@ -123,6 +123,9 @@ body {
   cursor: pointer;
   max-width: 500px;
 }
+.main .description .main-btn:active {
+  background-color: #1b85b3;
+}
 .main .description .main-btn .button-row {
   justify-content: center;
   gap: 10px;

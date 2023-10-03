@@ -77,6 +77,9 @@ body {
             border: none;
             cursor: pointer;
             max-width: 500px;
+            &:active {
+                background-color: #1b85b3;
+            }
             .button-row {
                 justify-content: center;
                 gap: 10px;
