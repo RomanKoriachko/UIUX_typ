@@ -57,9 +57,15 @@ body {
   background-color: #111516;
 }
 
+.main-container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1440px;
+  padding: 0px 120px;
 }
 
 .row {
@@ -163,6 +169,63 @@ body {
   background-position: center;
 }
 
+.footer {
+  padding: 58px 0px;
+  color: white;
+}
+.footer .footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1fr;
+  gap: 15px;
+}
+.footer .footer-wrapper .subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  justify-self: flex-end;
+}
+.footer .footer-wrapper .text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  opacity: 0.8;
+}
+.footer .footer-wrapper > .text {
+  min-width: 165px;
+}
+.footer .footer-wrapper .contacts {
+  justify-self: center;
+  min-width: 140px;
+}
+.footer .footer-wrapper .contacts .text:first-child {
+  margin-bottom: 16px;
+}
+.footer .footer-wrapper .footer-buttons-row {
+  gap: 16px;
+  align-self: center;
+  justify-content: center;
+}
+.footer .footer-wrapper .footer-buttons-row .footer-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #1e2425;
+  border-radius: 50px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer .footer-wrapper .footer-buttons-row .telegram-btn {
+  background-image: url(images/telegram-icon.svg);
+}
+.footer .footer-wrapper .footer-buttons-row .youtube-btn {
+  background-image: url(images/youtube-icon.svg);
+}
+.footer .footer-wrapper .footer-buttons-row .instagram-btn {
+  background-image: url(images/instagram-icon.svg);
+}
+
 @media (hover: hover) {
   .main .description .main-btn {
     transition: 0.2s all;
@@ -182,8 +245,6 @@ body {
   .main .course-name {
     width: 100%;
     padding: 57px 0px;
-    font-size: 48px;
-    line-height: 60px;
   }
   .main .course-name .course-name-content-wrapper {
     width: auto;
@@ -193,8 +254,26 @@ body {
     height: 44px;
     background-size: 75%;
   }
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+  .footer .footer-wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .footer .footer-wrapper .subtitle {
+    justify-self: center;
+  }
+  .footer .footer-wrapper .text {
+    margin-bottom: 16px;
+    text-align: center;
+  }
 }
 @media (max-width: 576px) {
+  .container {
+    padding: 0px 16px;
+  }
   .main .description {
     padding: 84px 16px 16px;
   }
@@ -209,5 +288,7 @@ body {
   }
   .main .course-name {
     padding: 57px 16px;
+    font-size: 48px;
+    line-height: 60px;
   }
 }

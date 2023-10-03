@@ -9,9 +9,14 @@ body {
     background-color: #111516;
 }
 
+.main-container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
 .container {
     margin: 0 auto;
     max-width: 1440px;
+    padding: 0px 120px;
 }
 
 .row {
@@ -114,6 +119,62 @@ body {
         }
     }
 }
+.footer {
+    padding: 58px 0px;
+    color: white;
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1fr;
+        gap: 15px;
+        .subtitle {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0em;
+            justify-self: flex-end;
+        }
+        .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            opacity: 0.8;
+        }
+        > .text {
+            min-width: 165px;
+        }
+        .contacts {
+            justify-self: center;
+            min-width: 140px;
+            .text:first-child {
+                margin-bottom: 16px;
+            }
+        }
+        .footer-buttons-row {
+            gap: 16px;
+            align-self: center;
+            justify-content: center;
+            .footer-btn {
+                width: 40px;
+                height: 40px;
+                background-color: #1e2425;
+                border-radius: 50px;
+                cursor: pointer;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .telegram-btn {
+                background-image: url(images/telegram-icon.svg);
+            }
+            .youtube-btn {
+                background-image: url(images/youtube-icon.svg);
+            }
+            .instagram-btn {
+                background-image: url(images/instagram-icon.svg);
+            }
+        }
+    }
+}
 
 @media (hover: hover) {
     .main {
@@ -144,8 +205,7 @@ body {
         .course-name {
             width: 100%;
             padding: 57px 0px;
-            font-size: 48px;
-            line-height: 60px;
+
             .course-name-content-wrapper {
                 width: auto;
                 .circle {
@@ -156,11 +216,29 @@ body {
             }
         }
     }
+    .footer {
+        padding-top: 32px;
+        padding-bottom: 40px;
+        .footer-wrapper {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            .subtitle {
+                justify-self: center;
+            }
+            .text {
+                margin-bottom: 16px;
+                text-align: center;
+            }
+        }
+    }
 }
 
 // ------- Mobile -------
 
 @media (max-width: 576px) {
+    .container {
+        padding: 0px 16px;
+    }
     .main {
         .description {
             padding: 84px 16px 16px;
@@ -176,6 +254,8 @@ body {
         }
         .course-name {
             padding: 57px 16px;
+            font-size: 48px;
+            line-height: 60px;
         }
     }
 }
