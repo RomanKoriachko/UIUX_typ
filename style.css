@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #111516;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.row {
+  display: flex;
+}
+
+.main {
+  color: #ffffff;
+}
+.main .description {
+  width: 45%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .description .description-content-wrapper {
+  max-width: 385px;
+}
+.main .description .logo {
+  margin-bottom: 16px;
+}
+.main .description .subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  margin-bottom: 16px;
+}
+.main .description .text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  margin-bottom: 16px;
+}
+.main .description .green-text {
+  color: #4ebd09;
+}
+.main .description .main-btn {
+  margin-bottom: 30px;
+  width: 100%;
+  background: linear-gradient(203.2deg, #37aee2 21.67%, #1e96c8 70%);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.main .description .main-btn .button-row {
+  justify-content: center;
+  gap: 10px;
+}
+.main .description .main-btn .telegram-img {
+  background-image: url(images/tg-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.main .course-name {
+  background-color: #ffffff;
+  color: #121617;
+  width: 55%;
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 136px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .course-name .course-name-content-wrapper {
+  width: -moz-min-content;
+  width: min-content;
+}
+.main .course-name .red-text {
+  color: #e7462a;
+}
+.main .course-name .text-and-circle-row {
+  align-items: center;
+  gap: 30px;
+}
+.main .course-name .circle {
+  width: 102px;
+  height: 102px;
+  background-color: #e7462a;
+  border-radius: 50px;
+  background-image: url(images/arrow-up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (hover: hover) {
+  .main .description .main-btn {
+    transition: 0.2s all;
+  }
+}
+@media (max-width: 992px) {
+  .main .content-row {
+    flex-direction: column;
+  }
+  .main .description {
+    width: 100%;
+    padding: 57px 0px;
+  }
+  .main .description .description-content-wrapper {
+    max-width: 80%;
+  }
+  .main .course-name {
+    width: 100%;
+    padding: 57px 0px;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .main .course-name .course-name-content-wrapper {
+    width: auto;
+  }
+  .main .course-name .course-name-content-wrapper .circle {
+    width: 44px;
+    height: 44px;
+    background-size: 75%;
+  }
+}
+@media (max-width: 576px) {
+  .main .description {
+    padding: 84px 16px 16px;
+  }
+  .main .description .description-content-wrapper {
+    max-width: 100%;
+  }
+  .main .description .green-text {
+    margin-bottom: 32px;
+  }
+  .main .description .main-btn {
+    margin-bottom: 16px;
+  }
+  .main .course-name {
+    padding: 57px 16px;
+  }
+}
